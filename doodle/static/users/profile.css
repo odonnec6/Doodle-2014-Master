@@ -1,0 +1,95 @@
+@charset "UTF-8";
+.most_recent {
+	border:2px solid white;
+	padding:20px;
+	color: #06F;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+		margin-left:auto;
+	margin-right:auto;
+		margin-top:15px;
+	
+	width: 400px;
+	height:relative;
+	background-color: #FFFFFF;
+	
+}
+
+
+
+.invitations {
+	border:2px solid white;
+	padding:20px;
+	color: #06F;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	margin-left:30px;
+	margin-top:20px;
+	width: 400px;
+	height:relative;
+	background-color: #FFFFFF;
+	position :relative;
+	
+}
+.view {
+	border:2px solid white;
+	padding:20px;
+	color: #06F;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	margin-left:500px;
+	margin-top:20px;
+	width: 90%;
+	height:relative;
+	background-color: #FFFFFF;
+	
+}
+
+select{
+	alignment-adjust: middle;
+	margin-left: 27%;
+}
+/*.button_stuff{
+  border:2px 	 
+ /*  margin-left:50px;
+  margin-top: 20px;
+  display: block;
+  width: 20%;
+  line-height: 2em;
+  background: rgba(114,212,202,1);
+  border-radius: 500px;
+  border-top: 1px solid #B2ECE6;
+  box-shadow: 0 0 0 1px #46A294, 0 2px 2px #808389;
+
+  color: #FFFFFF;
+  
+  font-size: 1.5em;
+  text-shadow: 0 1px 2px #21756A;
+ 
+}
+button:hover{
+ background: linear-gradient(to bottom, rgba(107,198,186,1) 0%,rgba(57,175,154,1) 100%);  
+}
+button:active{
+  box-shadow: inset 0 0 5px #000;
+  background: linear-gradient(to bottom, rgba(57,175,154,1) 0%,rgba(107,198,186,1) 100%); 
+}
+.centre_profile_buttons
+{
+	float: right;
+  	width: 70%;
+}
+.centre_poll_heading
+{
+	float: right;
+  	width: 70%;
+}*/
+
+
+

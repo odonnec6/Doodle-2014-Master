@@ -1,0 +1,61 @@
+{% extends 'base/base.html' %}
+{% block title %}{{ poll.title }}{% endblock %}
+{% block body_block %}
+<h1 class="title">{{ poll.title }}</h1>
+<h2> Location : {{ poll.location }}</h2>
+<h3 id="cap"> Descrption : {{ poll.description }}</h3>
+
+<table width="205" height="82">
+
+         <tr>
+                <td class="timetable_head">Participant</td>
+        {% for key, values in days.items %}
+                <th colspan="{{ values|length }}" class="timetable_head">{{key}}</th>
+
+        {% endfor %}
+               <tr>
+           <td class="timetable_head"></td>
+
+
+        {% for key, values in days.items %}
+                {% for value in values %}
+                     <th class="timetable_head">{{value}}</th>
+                {% endfor %}
+
+        {% endfor %}
+           </tr>
+  <!--    {% for key, values in days.items %}
+            <tr>
+                <td>Participant</td>
+                {% for value in values %}
+                    <td>{{value}}</td>
+                {% endfor %}
+            </tr>
+        {% endfor %}-->
+        {% for key, values in votes.items %}
+            <tr>
+
+                <td class="timetable_name">
+                    {% if key.anonymous %}
+                    Anonymous
+                    {% else %}
+                    {{key}}
+                    {% endif %}
+                </td>
+                {% for value in values %}
+                  {% if value %}
+                    <td class="chosen" ></td>
+                    {% else %}
+                    <td align="center"> Free Slot  </td>
+
+                    {% endif %}
+
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    <td class="poll_vote_button"> <a href="{% url 'poll:vote' poll.id %}">Vote</a></td>
+</table>
+
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+
+{% endblock %}

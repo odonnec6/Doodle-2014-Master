@@ -1,0 +1,25 @@
+{% extends 'base/base.html' %}
+{% block title %}Welcome to Converge{% endblock %}
+
+{% block body_block %}
+<div class="ribbon"></div>
+  <div class="login">
+  <h1> User Login</h1>
+  <p>Enter Below</p>
+         <form id="login_form" method="post" action="/users/login/">
+             {% csrf_token %}
+    <div class="input">
+      <div class="blockinput">
+        <i class="icon-envelope-alt"></i><input type="mail" placeholder="Email" name="username">
+      </div>
+      <div class="blockinput">
+        <i class="icon-unlock"></i><input type="password" name="password"placeholder="Password">
+      </div>
+    </div>
+    <button>Login</button>
+  </form>
+  </div>
+</div>
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+{% endblock %}
+

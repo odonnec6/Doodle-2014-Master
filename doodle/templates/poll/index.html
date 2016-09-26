@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% block title %}Poll Index{% endblock %}
+
+{% block body_block %}
+<h1 class="title">Poll List</h1>
+
+
+
+{% if poll_list %}
+<div class = "poll_index_buttons">
+{% for poll in poll_list %}
+<a href="{% url 'poll:detail' poll.pk %}"><li class="poll_buttons">{{ poll.title }}</li></a>
+{% endfor %}
+<a class="poll_index_new" href="/poll/create/" position="relative">Create a poll</a>
+
+</div>
+
+{% else %}
+<p align="center">No polls created at this time<p>
+<a class="poll_index_new" href="/poll/create/" position="relative">Create a poll</a>
+
+{% endif %}
+</div>
+
+</div>
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+
+{% endblock %}

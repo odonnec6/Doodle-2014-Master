@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% block title %}Register with Converge{% endblock %}
+
+{% block body_block %}
+        <div class = "register">
+
+    <h1  style="font-size:35px">Register with Converge</h1>
+    <br>
+
+    <form id="poll_form" method="post" action="/users/create/"
+            enctype="multipart/form-data">
+
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input class="register_submit" type="submit" name="submit" value="Register" />
+    </form>
+            </div>
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+{% endblock %}
+

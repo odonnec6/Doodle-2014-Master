@@ -1,0 +1,16 @@
+{% extends 'base/base.html' %}
+{% load crispy_forms_tags %}
+{% block title %}Add a Poll now{% endblock %}
+
+{% block body_block %}
+        <div class = "create_poll">
+
+        <h1 align="middle">Add a Poll now</h1>
+              
+                {% crispy form form.helper %}
+
+
+</div>
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+{% endblock %}
+

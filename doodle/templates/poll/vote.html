@@ -1,0 +1,28 @@
+{% extends 'base/base.html' %}
+{% block title %}{{ poll.title }}{% endblock %}
+
+{% block body_block %}
+    <h1>Vote on Poll {{ poll.title }}</h1>
+    
+    <form id="poll_form" method="post" action="/poll/{{ poll.id }}/vote/" class = "vote_align_page">
+
+        {% csrf_token %}
+        {% for hidden in form.hidden_fields %}
+            {{ hidden }}
+        {% endfor %}
+
+        {% for field in form.visible_fields %}
+       <!--<p class = "vote_page_align">-->
+            <p >
+            {{ field.errors }}
+            {{ field.help_text}}
+            {{ field }}
+        </p>
+        <!--</p>-->
+        {% endfor %}
+
+        <input type="submit" name="submit" value="Vote" />
+    </form>
+    <h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+{% endblock %}
+

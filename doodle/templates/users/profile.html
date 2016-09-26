@@ -1,0 +1,40 @@
+{% extends 'base/base.html' %}
+{% block title %}Profile{% endblock %}
+
+{% block body_block %}
+
+
+<div class = "poll_index_buttons">
+
+
+<div>
+<div class="most_recent" align="center">
+
+<h1 align="middle"> User Info</h1>
+
+<p>
+ Name: {{ user.first_name }} {{ user.last_name }}<br />
+ UserName: 	{{ user.username }}<br />
+ Email: {{ user.email }}<br />
+
+</p>
+</div>
+<a href = "/poll/" style="color: #06F"><div class="most_recent"><h1 align="middle">Created Polls </h1></a>
+    {% for poll in polls %}
+        <a href = "/poll/{{poll.id}}/{{poll.admin_hash}}/" style="color: #06F"><h1 align="middle">{{poll.title}}</h1></a>
+    {% endfor %}
+</div>
+
+
+
+</div>
+<h1 class = "home_page_heading">By Trinity , For Trinity ©</h1>
+
+
+<!---<div class="most_recent "><a href = "http://www.google.com"</a><h1 align="middle"> Edit Profile </h1>--->
+</div>
+
+</div>
+</body>
+</html>
+{% endblock %}

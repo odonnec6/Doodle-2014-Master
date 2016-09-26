@@ -1,0 +1,111 @@
+/*table css */
+
+table{
+	margin-left: 10%;
+	margin-right:10%;
+	width:80%;
+
+
+}
+/*table td:hover {
+	border:2px solid white;
+	padding:20px;
+	/*background: white;
+	color: #FFF;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	font-weight: bolder;
+}*/
+table th:hover {
+	border:3px solid white;
+	padding:20px;
+/*	background: black;*/
+	color: white;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	font-weight: bolder;	
+	text-transform:capitalize;
+		align:"middle";
+}
+th
+{
+	border:3px solid white;
+	padding:20px;
+	color: white;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	font-weight: bolder; 
+	text-transform:capitalize;
+	align:"middle";
+ }
+td
+{
+	border:2px solid white;
+	color: #CBFF6B;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	padding:20px;
+	width:20px;
+	align:"middle";
+	font-weight: bolder;
+	text-transform:capitalize;
+}
+/* check if still suing */
+.bodyTimetable{
+  font-family: 'Montserrat', Arial;
+  font-size: 1em;
+     position: absolute;
+	top: 90%;
+}
+.chosen{
+	border:10px solid white;
+	padding:20px;
+	background-color: #666;
+	border: 10px;
+	border-radius: 20px 20px 20px 20px;
+	font-weight: bolder;
+	text-align:center;
+}
+.title{
+	text-align:center;
+	text-size:20px;
+	text-transform:capitalize;
+}
+.timetable_head{
+	border:3px solid white;
+	padding:20px;
+	color: white;
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	font-weight: bolder;
+	text-align:center;
+}
+.timetable_name{
+	border:3px solid white;
+	padding:20px;
+	color: white;
+
+	border: 1px solid rgba(255,255,255,.3);
+	border-top: 1px solid rgba(255,255,255,.5);
+	border-bottom:1px solid rgba(255,255,255,.5);
+	border-radius: 20px 20px 20px 20px;
+	box-shadow: 0 0 3px rgba(0,0,0,.7);
+	font-weight: bolder;
+	text-align:center;
+}
+	
